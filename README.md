@@ -3,6 +3,9 @@ ImageJ macros for the analysis of fluorescence timelapse multiwell plate images 
 
 In order to use this script, fluorescence and brightfield timelapses from the Incucyte system should be exported as single-plane `tif` images with wellname, position and timestamp in the file name. (an example file name is `well_B1_2_2022y05m08d_08h46m.tif`). Fluorescence and brightfield images should have exactly the same name, in separate folders.  The ImageJ1 macro `Incucyte confluency analysis.ijm` combines images for each position, preprocesses them and analyses the confluency over time. Measurements are saved in a table `Confluency all positions`, as well as in a table `Averaged Confluency`, where all positions in a well have been averaged.
 
+## Installation
+Download the three `.ijm` files. Drag&drop a file onto the Fiji window opens the script editor. Click `Run` to run the macro. :-)
+
 ## Brief workflow
 - Fluorescence and brightfield images are loaded per well as image stacks. The brihgtfield images are not used in the quantifications, 
 - Background can be subtracted from the fluorescence images. If you don't have an background image, or 'empty' image, the macro `Incucyte confluency analysis - create background.ijm` can be used to generate one. The mean value of the background image is added again to prevent negative gray values. This procedure proved more robust than a 'real' flatfield correction, for our low-intensity images.
