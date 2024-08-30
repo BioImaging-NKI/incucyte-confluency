@@ -28,6 +28,6 @@ In the paper cells were co-cultured with (unstained) cytotoxic T cells. Below th
 After running an analysis, the resulting `Average Confluency` table should look like this:
 ![image](https://github.com/user-attachments/assets/841debb9-f6c4-41cf-94c7-6ef4b077fa04)
 
-Finally, the macro `Incucyte confluency analysis - create multiplot from table` can be used to generate an overview of confluency over time for the whole well plate. It reads the Average Confluency table and produces a montage image:
+Finally, the macro `Incucyte confluency analysis - create multiplot from table.ijm` can be used to generate an overview of confluency over time for the whole well plate. It reads the Average Confluency table and produces a montage image:
 ![image](https://github.com/user-attachments/assets/16478fef-e6f4-43e9-8441-33ae8971aa01)
 
