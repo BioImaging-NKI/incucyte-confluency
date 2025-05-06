@@ -1,5 +1,9 @@
 # Incucyte multiwell plate confluency analysis
-ImageJ macros for the analysis of fluorescence timelapse multiwell plate images from the Incucyte system, developed for the paper "...", submitted to "...".
+ImageJ macros for the analysis of fluorescence timelapse multiwell plate images from the Incucyte system, developed for the paper "Histone methyltransferase DOT1L maintains identity and restricts cytotoxic potential of CD8 T cells", submitted to Science Advances.
+
+Link to Zenodo repository:
+
+[![DOI](https://zenodo.org/badge/848195269.svg)](https://doi.org/10.5281/zenodo.15348650)
 
 In order to use this script, fluorescence and brightfield timelapses from the Incucyte system should be exported as single-plane `tif` images with wellname, position and timestamp in the file name. (an example file name is `well_B1_2_2022y05m08d_08h46m.tif`). Fluorescence and brightfield images should have exactly the same name, in separate folders.  The ImageJ1 macro `Incucyte confluency analysis.ijm` combines images for each position, preprocesses them and analyses the confluency over time. Measurements are saved in a table `Confluency all positions`, as well as in a table `Averaged Confluency`, where all positions in a well have been averaged.
 
